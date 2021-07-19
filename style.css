@@ -9,10 +9,11 @@
     padding:6px;
     display: flex;
     flex-wrap:nowrap;
-    justify-content: space-around; 
+    justify-content:baseline; 
 }
 /*This is a list*/
 .header-left {
+    justify-self: left;
     background-color:aliceblue;
     display:flex;
     flex-flow: row nowrap;
@@ -29,10 +30,20 @@
     padding: 0 5px 0 15px;
     margin-top: 5px;
 }
-/*this is a div*/
+
+.header-middle-empty {
+    flex-grow: 5;
+}
+
+/*this is the div on he right of the header*/
 .header-right {
     background-color: burlywood;
     display: flex;
+    flex-wrap: row nowrap;
+}
+
+.header-right ul{
+    flex-wrap: row nowrap;
 }
 
 .google-logo {
