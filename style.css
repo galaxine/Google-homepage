@@ -1,5 +1,6 @@
 .body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, "Helvetica Neue", sans-serif;
+    font-size: 14px;
 }
 
 /*The header part, container*/
@@ -9,7 +10,6 @@
     padding:6px;
     display: flex;
     flex-wrap:nowrap;
-    justify-content:baseline; 
 }
 /*This is a list*/
 .header-left {
@@ -32,19 +32,90 @@
 }
 
 .header-middle-empty {
-    flex-grow: 5;
+    flex-grow: 1;
 }
 
 /*this is the div on he right of the header*/
 .header-right {
     background-color: burlywood;
     display: flex;
-    flex-wrap: row nowrap;
+}
+/*The first right menu*/
+.header-right-fst-menu {
+    display: flex;
 }
 
-.header-right ul{
-    flex-wrap: row nowrap;
+/*The inner list of the first menu on the right*/
+.header-right-fst-menu-list {
+    padding: 0 15px;
+    margin-top: 5px;
 }
+
+.header-right-snd-menu {
+    display: flex;
+}
+ 
+.header-right-snd-menu-list {
+    padding: 0 15px;
+    margin-top: 5px;
+}
+
+.google-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#google-img {
+    margin-top: 170px;
+}
+/*Google search section*/
+
+.search-field {
+    border: 1px grey solid;
+    width: 300px;
+    border-radius: 24px;
+    padding: 5px 8px 0 14px;
+   /* background-color: aquamarine;*/
+    display: flex;
+}
+
+#lens img {
+    justify-content: left;
+    width: 20px;
+}
+
+#search {
+    flex-grow: 3;
+}
+
+#search input{
+    border: none;
+    outline: none;
+    width: 225px;
+    height:20px;
+    padding:0;
+    margin: 0;
+    
+}
+
+#microphone img {
+    width: 20px;
+}
+
+
+.google-search-buttons {
+    
+    align-self: flex-end;
+}
+
+/*The language section*/
+.google-language {
+    text-align: center;
+    padding-top: 40px;
+}
+
+
 
 .google-logo {
     background-color: blanchedalmond;
@@ -53,11 +124,39 @@
 
 .google-language {
     background-color: rgb(108, 74, 33);
-    height: 980px;
+    height:;
 
 }
+
+/*Footer*/
+
+
+#country {
+    height: 17px;
+    padding: 15px 30px;
+    border-bottom:1px grey solid;
+
+
+}
+
 
 .footer {
     background-color: bisque;
     height: 94px;
+}
+
+.footer-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    list-style-type: none;
+    overflow:hidden;
+
+
+}
+
+.footer-nav-list li a{
+    display: block;
+    padding: 10px;
 }

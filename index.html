@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Search</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Body... really?-->
     <div>
@@ -19,39 +19,59 @@
                 <li id="about">About</li>
                 <li id="store">Store</li>
             </ul>
+            <!-- The box inbetween -->
+            <div class="header-middle-empty"></div>
             <!-- right side of header div -->
             <div class="header-right">
-                <ul class="header-right-fst-menu" >
-                    <li id="gmail">Gmail</li>
-                    <li id="images">Images</li>
+                <ul class="header-right-fst-menu">
+                    <li class="header-right-fst-menu-list">Gmail</li>
+                    <li class="header-right-fst-menu-list">Images</li>
                 </ul>
                 <ul class="header-right-snd-menu">
-                    <li>Punkte</li>
-                    <li>Profile</li>
-                </ul>                
+                    <li class="header-right-snd-menu-list">Punkte</li>
+                    <li class="header-right-snd-menu-list">Profile</li>
+                </ul>
             </div>
         </div>
         <!-- Google title-->
-        <div class="google-logo">GOOGLE</div>
-        <!-- Google search-->
-        <div>
-            <form action="">
-                <!-- Google search section -->
-                <div>
-                    <!-- the centered searchbox-->
-                    <div>
-                        <!--The searchbarbox, probably child of the one above for flex something-->
-                        <div>
-
-                        </div>
-                    </div>
-                </div>
-            </form>
+        <div class="google-logo">
+            <img id="google-img" src="googlelogo_color_272x92dp.png"></img>
         </div>
-        <!-- Google Language -->
-        <div class="google-language">hjg</div>
-        <!-- Google Search Footer-->
-        <div class="footer"></div>
+        <!-- Google search section-->
+        <div class="google-search">
+            <form class=google-search-form action="">
+                <!-- Google search with its parts -->
+                <div class="search-box"></div>
+                <ul class="search-field">
+                    <li id="lens"><img src="white-search-icon_27176.png"><img></li>
+                    <li id="search"><input type="text"></li>
+                    <li id="microphone"><img src="OIP (1).jpg"> </li>
+                </ul>
+        </div>
+        <div class="google-search-buttons">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+        </form>
+    </div>
+    <!-- Google Language -->
+    <div class="google-language">Google offered in: <a>Deutsch</a></div>
+    <!-- Google Search Footer-->
+    <div class="footer">
+        <div id="country">Country</div>
+        <div>
+            <nav>
+                <ul class="footer-nav-list">
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">How Search works</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
     </div>
 </body>
 
