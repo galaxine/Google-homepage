@@ -1,0 +1,52 @@
+.body {
+    font-family: Arial, sans-serif;
+}
+
+/*The header part, container*/
+.header {
+    background-color: aqua;
+    height: 60px;
+    padding:6px;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-around; 
+}
+/*This is a list*/
+.header-left {
+    background-color:aliceblue;
+    display:flex;
+    flex-flow: row nowrap;
+}
+
+#about {
+    display: block;
+    padding: 0 5px 0 15px;
+    margin-top: 5px;
+}
+
+#store {
+    display: block;
+    padding: 0 5px 0 15px;
+    margin-top: 5px;
+}
+/*this is a div*/
+.header-right {
+    background-color: burlywood;
+    display: flex;
+}
+
+.google-logo {
+    background-color: blanchedalmond;
+    height: 290px;
+}
+
+.google-language {
+    background-color: rgb(108, 74, 33);
+    height: 980px;
+
+}
+
+.footer {
+    background-color: bisque;
+    height: 94px;
+}
